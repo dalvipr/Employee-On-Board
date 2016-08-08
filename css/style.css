@@ -1,0 +1,250 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/bg3.jpg");
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: cover;
+    /*background-size: 100%;*/
+    /*overflow-y: scroll;
+    overflow-x: hidden;*/
+}
+.header-overlay, .footer-overlay {
+    background-color: rgba(121,36,33,0.75);
+    padding: 5px;
+}
+.company-name h1{
+    font-size: 100px;
+    font-weight: 600;
+    text-shadow: 3px 3px black;
+    color: #985f0d;
+}
+.sm-device{
+    margin-top: 50px;
+}
+.company-name-sm h1{
+    font-size: 60px;
+    margin-top: 20px;
+    text-shadow: 3px 3px black;
+    color: #985f0d;
+    font-weight: 700;
+}
+.main-content{
+    /*background-image: url("../images/bg1.jpg");*/
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: 100%;
+    /*height: 800px;*/
+
+
+}
+.content-overlay{
+    background-color: rgba(300,100,0,0.45);
+   /* background-color: rgba(31,31,31,0.75);*/
+    /*height: 800px;*/
+    padding: 40px;
+}
+.content-heading h1{
+    margin-top: 0;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #761c19;
+    text-shadow: 2px 2px #000000;
+
+}
+
+.welcom-message h2, .registration-process h2{
+    margin-top: 50px;
+    font-size: 40px;
+    color: #000000;
+}
+.welcom-message p {
+    font-size: 20px;
+    color: #000000;
+}
+
+/* Left Side*/
+.circle{
+    background-color: #e38d13;
+    border-radius: 200px;
+    color: #985f0d;
+    height: 70px;
+    font-size: 45px;
+    font-weight: bold;
+    width: 70px;
+    vertical-align: middle;
+    /*border: 5px solid black;*/
+
+}
+
+.registration-steps h1{
+    text-align: left;
+    font-size:35px;
+    color: #000000;
+
+}
+.steps{
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+/* Right Side*/
+.button-links{
+    margin-top: 80px;
+}
+.button-links>div{
+    margin-bottom: 50px;
+}
+.registration-btn,
+.registration-btn:focus,
+.registration-btn:active,
+.registration-btn:visited,
+.learn-more-btn,
+.learn-more-btn:active,
+.learn-more-btn:focus,
+.learn-more-btn:visited{
+    background-color: transparent;
+    text-decoration: none;
+    color: #e38d13;
+    border: 3px solid #985f0d;
+    padding: 10px;
+    font-size: 35px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+}
+.registration-btn:hover, .learn-more-btn:hover{
+    text-decoration: none;
+    background-color: #e38d13;
+    color: #792421;
+}
+/* Footer*/
+.copyright h4{
+    color: #985f0d;
+}
+.company-info h2, .about-us h2,
+.social-links h2{
+    color: #8a6d3b;
+}
+.company-info h4 ,.company-info a,
+.about-us h4, .about-us a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #e38d13;
+}
+.company-info a:hover,
+.about-us a:hover{
+    color: #985f0d;
+}
+.social-links i {
+    color: #e38d13;
+    margin-left: 10px;
+}
+/***************Animation********************/
+.r-button, .l-button{
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;
+}
+.registration-steps {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************************************************/
+@media (max-width: 768px) {
+    body{
+        background-image: url("../images/bg2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .company-name h1{
+        font-size: 10px;
+    }
+
+    .circle{
+        margin-left: 25%;
+        /*float: left;*/
+
+    }
+    .registration-steps h1{
+        margin-left: 5%;
+
+    }
+
+}
+/*
+@media only screen and (min-width : 1200px)  {
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url("../images/bg3.jpg");
+        background-attachment: fixed;
+        background-repeat: repeat;
+        background-size: cover;
+        !*background-size: 100%;*!
+        !*overflow-y: scroll;
+        overflow-x: hidden;*!
+    }
+
+}
+
+@media only screen and (max-width : 979px) and (min-width: 768px) {
+
+
+}
+
+@media only screen and (max-width : 767px) and (min-width: 781px)  {
+   !* body{
+        margin: 0;
+        padding: 0;
+        background-image: url("../images/bg2.jpg");
+        background-attachment: fixed;
+        background-repeat: repeat;
+        background-size: cover;
+        !*background-size: 100%;*!
+        !*overflow-y: scroll;
+        overflow-x: hidden;*!
+    }*!
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 375px) {
+    body{
+        background-image: url("../images/bg2.jpg");
+        background-attachment: fixed;
+        background-repeat: repeat;
+        background-size: cover;
+    }
+
+}
+
+
+*/
